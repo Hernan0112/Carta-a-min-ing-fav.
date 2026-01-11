@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta a mi Ing fav. 💌</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            color: #5a2a2a; /* Cambiado a un color oscuro */
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); /* Sombra blanca para contraste */
+            font-size: 2.5rem;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            width: 90%;
+        }
+        .emoji {
+            font-size: 100px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            color: #d6336c;
+        }
+        .emoji:hover {
+            transform: scale(1.1);
+        }
+        #carta {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border: 2px solid #d6336c;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: none;
+            text-align: left;
+        }
+        #carta h2 {
+            color: #d6336c;
+        }
+        #carta p {
+            font-size: 16px;
+            color: #333;
+            line-height: 1.6;
+        }
+        #error {
+            color: red;
+            font-size: 18px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Reina de mi corazón ❤️</h1>
+        <!-- Emoji de carta -->
+        <div id="emojiCarta" class="emoji" onclick="mostrarCarta()">💌</div>
+        <p id="error">⚠️ Algo salió mal. Intenta nuevamente.</p>
+        
+        <!-- Carta oculta -->
+        <div id="carta">
+            <h2>Mi Querida Persona Especial ❤️</h2>
+            <p>
+                Sé que nuestro inicio no fue el mejor: malos entendidos, malas respuestas, intrigas y demás. También sé que no supe entrar a la primera; te confieso que los nervios me ganaron, y sí, tenía muchos nervios, le tenía mucho miedo a un rechazo jajaa, cosa que ocurrió y por eso me alejé. Me prometí a mí mismo no buscarte.Pero mira cómo son las cosas. Si así Dios lo tenía preparado, ocurriría hasta en 10 años.
+            <p>
+                Créeme que estos meses contigo han sido los mejores, han sido meses maravillosos y quiero seguir compartiendo muchos más a tu lado. En tus abrazos me siento un niño, siento que puedo ser yo, me siento muy lindo. Hoy estoy muy orgulloso de que estés a mi lado porque sé que tengo una gran mujer conmigo, tengo una mujer con proyección, futuro, tiene belleza y lo tiene todo. Tiene todo lo que me encanta y me enamora. No hay competencia, no la habrá nunca porque tienes todo lo que siempre busqué y lo que le pedía a mi Dios. Y sí, estoy seguro que él te mandó para que me quieras bonito y yo quererte bonito.
+            <p>
+                No vengo a prometerte nada, no vengo a decirte que te voy a bajar el cielo, no vengo a prometerte que todo será fantástico y bueno, porque sé que vendrán esos días en donde vendrán dudas y miedos. Y antes que esos días lleguen, quiero que sepas que eres todo lo que quiero y siempre quiero que estés en mi vida. Eres mi lugar seguro y lo eres todo para mí. Estoy enamorado y me gustas mucho.
+            </p>
+            <p>
+                Te dije que no quiero prometerte nada, pero es imposible porque desde ya me proyecto muchas cosas contigo. Quiero compartir todas las cosas que me depare la vida a tu lado, que juntos nos apoyemos en los momentos de tristeza, en los momentos difíciles de salud, en los momentos de pérdidas, en los malos días de trabajo. Pero sin duda quiero que sean las mejores noticias a tu lado, noticias como las de nuestro primer hijo que sé que nos llenarían mucho de alegría y demás. Quiero vivir todo lo lindo contigo, pero sin dudas quiero ser tu apoyo en los momentos difíciles.
+            </p>
+            <p>
+                Te quiero, te quiero mucho y estoy muy orgulloso hoy que estés aquí conmigo. Te juro que todos los días me esfuerzo por regalarte lo mejor y que te sientas la mujer más amada del mundo, y quiero que sepas que mientras yo esté, no te va a faltar nada mientras esté a mi alcance.
+            </p>
+            <p>
+                No sé cómo vamos a comenzar, pero sea como sea quiero comenzar contigo. Gracias por estar conmigo. Te quiero mucho, mi ingeniera favorita. ❤️❤️
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function mostrarCarta() {
+            // Muestra la carta y oculta el emoji
+            document.getElementById("carta").style.display = "block";
+            document.getElementById("emojiCarta").style.display = "none";
+        }
+
+        function mostrarError() {
+            document.getElementById("error").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
